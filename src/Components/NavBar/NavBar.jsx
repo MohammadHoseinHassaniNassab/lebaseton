@@ -20,7 +20,7 @@ export default function NavBar() {
         <div className="w-full rounded-2xl bg-primary px-8 py-2 flex items-center gap-5 justify-between shadow-xl">
           <div className="flex items-center justify-center">
             <Link to='/' className="pe-6 lg:border-l-2 py-1 lg:border-white">
-              <img src="./images/newest_logo_new-indigo.png" className="h-12" alt="" />
+              <img src="https://mohammadhoseinhassaninassab.github.io/lebaseton/images/newest_logo_new-indigo.png" className="h-12" alt="" />
             </Link>
             <div className="hidden lg:flex ps-6">
               <nav className="flex items-center justify-center gap-x-10 text-white font-[600]">

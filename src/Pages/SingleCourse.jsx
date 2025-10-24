@@ -31,7 +31,7 @@ export default function SingleCourse() {
 
         <div className='flex flex-col lg:flex-row-reverse gap-x-10 p-5'>
           <div className='basis-1/2 p-5 pb-0 flex items-center'>
-            <img className='rounded-2xl' src={'../' + currentCourse.topic_image_location} alt="" />
+            <img className='rounded-2xl' src={currentCourse.topic_image_location} alt="" />
           </div>
 
           <div className='basis-1/2 flex flex-col p-5 justify-center'>

@@ -6,7 +6,7 @@ export default function TeacherCard(props) {
     let teacherID = props.teacherID;
     return (
         <div className='w-full flex flex-col gap-3 items-center rounded-2xl bg-slate-50 border-2 border-slate-200 p-5 sticky top-24 right-0'>
-            <img src="../images/teacher_sabori.jpg" className='rounded-full w-16' alt="" />
+            <img src="https://mohammadhoseinhassaninassab.github.io/lebaseton/images/teacher_sabori.jpg" className='rounded-full w-16' alt="" />
             <Link className='font-[500] btn-outline-primary' to={'/teachers/' + teacherID}>
                 <CiLogin />
                 دوره های دبیر

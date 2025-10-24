@@ -42,8 +42,8 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="basis-1/2 lg:basis-1/5 flex items-center justify-around">
-                    <a href='' className='w-5/12'><img src="../images/e-namad.jpg" alt="" /></a>
-                    <a href='' className='w-5/12'><img src="../images/zarinpal.png" alt="" /></a>
+                    <a href='' className='w-5/12'><img src="https://mohammadhoseinhassaninassab.github.io/lebaseton/images/e-namad.jpg" alt="" /></a>
+                    <a href='' className='w-5/12'><img src="https://mohammadhoseinhassaninassab.github.io/lebaseton/images/zarinpal.png" alt="" /></a>
                 </div>
             </div>
             <div className='flex items-center justify-center font-bold text-sm text-center border-t mt-5 pt-3 mx-10'>
