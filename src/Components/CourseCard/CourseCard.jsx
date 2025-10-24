@@ -38,7 +38,7 @@ function CourseCard(props) {
                             <span className='ms-1 line-clamp-1'>{props.time}ساعت</span>
                         </div>
                         <div className='flex flex-col-reverse items-center'>
-                            <span className='text-primary font-bold'>{(priceAfterOff !== 0) ? <span className='flex'><Separate price={priceAfterOff} /> <img src='../images/toman.svg' alt='.'/> </span> : "رایگان!"}</span>
+                            <span className='text-primary font-bold'>{(priceAfterOff !== 0) ? <span className='flex'><Separate price={priceAfterOff} /> <img src='./images/toman.svg' alt='.'/> </span> : "رایگان!"}</span>
                             {props.offer ? <span className='text-slate-500 text-xs'><del><Separate price={props.price} /></del></span> : null}
                         </div>
                     </div>
