@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: 'https://github.com/MohammadHoseinHassaniNassab/lebaseton',
+  base: '/lebaseton/',
 })
