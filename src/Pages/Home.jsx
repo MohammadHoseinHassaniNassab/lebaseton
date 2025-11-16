@@ -4,6 +4,9 @@ import Footer from '../Components/Footer/Footer'
 import CourseCard from '../Components/CourseCard/CourseCard'
 import CoursesDatas from '../Components/Datas/CoursesDatas'
 import { RiArrowLeftSLine } from "react-icons/ri";
+import mainImage from "/images/main-img.png"
+
+
 export default function Home() {
     let courses = CoursesDatas;
     
@@ -13,7 +16,7 @@ export default function Home() {
             <div className="w-full p-5">
                 <div className="w-full grid lg:grid-cols-2 grid-cols-1 text-center">
                     <div className="flex items-start justify-centenpx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watchr">
-                        <img src="https://mohammadhoseinhassaninassab.github.io/lebaseton/images/main-img.png" className="w-full p-20" alt="" />
+                        <img src={mainImage} className="w-full p-20" alt="" />
                     </div>
                     <div className="flex flex-col items-center justify-center lg:px-20 p-4 gap-7 font-medium">
                         <div className="text-4xl font-bold">

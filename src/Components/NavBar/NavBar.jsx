@@ -58,7 +58,7 @@ export default function NavBar() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link to={'/'} className="bg-white rounded-xl text-gray-400 text-2xl flex items-center justify-center p-2" >
+            <Link to={'/login'} className="bg-white rounded-xl text-gray-400 text-2xl flex items-center justify-center p-2" >
               <FaUser className='mx' />
             </Link>
             <button type='button' className="bg-white rounded-xl text-gray-400 text-2xl hidden lg:flex items-center justify-center p-2" onClick={() => {  }}>

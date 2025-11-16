@@ -1,4 +1,4 @@
-  import React from "react";
+import React from "react";
 import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./Pages/Home";
 import SingleCourse from "./Pages/SingleCourse";
@@ -6,6 +6,7 @@ import SingleTeacher from "./Pages/SingleTeacher";
 import SingleLesson from "./Pages/SingleLesson";
 import Buy from "./Pages/Buy";
 import Courses from "./Pages/Courses";
+import Login from "./Pages/Login";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/lessons/:episodeID" element={<SingleLesson />} />
           <Route path="/buy/:courseID" element={<Buy />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </HashRouter>
     </div>
