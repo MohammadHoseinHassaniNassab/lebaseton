@@ -70,7 +70,7 @@ let CoursesDatas = [
         "offer": 0,
         "information": "این دوره مخصوص افرادی هست که هیچ پیش‌زمینه‌ای در خیاطی ندارن. هنرجو ابتدا با ابزارها، اصطلاحات و انواع پارچه‌ها آشنا می‌شه. سپس دوخت‌های پایه مثل دوخت ساده، زیپ مخفی و سجاف رو یاد می‌گیره. در ادامه با روش‌های برش بدون الگو، لباس‌های ساده مثل دامن، بلوز و تونیک رو می‌دوزه. این دوره مقدمه‌ای عالی برای ورود به دنیای حرفه‌ای خیاطی هست.",
         "label": "اموزش خیاطی",
-        "topic_image_location": "https://mohammadhoseinhassaninassab.github.io/lebaseton/images/ChatGPT1.png",
+        "topic_image_location": "ChatGPT1.png",
         "teacher_id": "1",
         "students_count": "0"
     },

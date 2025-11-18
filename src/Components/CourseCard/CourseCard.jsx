@@ -3,8 +3,16 @@ import { LuClock4 } from 'react-icons/lu';
 import { IoPersonCircleOutline } from 'react-icons/io5';
 import Separate from '../Separate/Separate';
 import { Link } from 'react-router-dom';
+import DynamicImage from '../DynamicImage/DynamicImage';
 
 function CourseCard(props) {
+    // const imageLoader = (imageName) => {
+    //     try{
+    //         return re().default;
+    //     } catch(err) {
+    //         return err
+    //     }
+    // }
     let priceAfterOff = props.price / 100 * (100 - props.offer);
     return (
         <div className='flex flex-col relative flex-grow bg-white rounded-xl transition-all duration-500 justify-between gap-y-8' href='#'>
@@ -12,7 +20,7 @@ function CourseCard(props) {
             <div className='flex flex-col gap-y-2'>
                 <div className=''>
                     <Link to={'/courses/' + props.id} className='w-full mb-3 lg:mb-0 rounded-xl flex justify-center bg-white overflow-hidden'>
-                        <img className='rounded-xl' src={props.topic_image_location} alt='course_pic' />
+                        <DynamicImage imageName={props.topic_image_location} />
                     </Link>
                 </div>
                 <div className='px-4 pt-1'>
@@ -31,16 +39,16 @@ function CourseCard(props) {
                         کبری صبوری مقدم
                     </Link>
                 </div>
-                <div className='border-t-2'>
-                    <div className='py-2 px-4 lg:px-5 flex items-end justify-between'>
-                        <div className='flex items-center text-slate-500'>
-                            <LuClock4 />
-                            <span className='ms-1 line-clamp-1'>{props.time}ساعت</span>
-                        </div>
-                        <div className='flex flex-col-reverse items-center'>
-                            <span className='text-primary font-bold'>{(priceAfterOff !== 0) ? <span className='flex'><Separate price={priceAfterOff} /> <img src='https://mohammadhoseinhassaninassab.github.io/lebaseton/images/toman.svg' alt='.'/> </span> : "رایگان!"}</span>
-                            {props.offer ? <span className='text-slate-500 text-xs'><del><Separate price={props.price} /></del></span> : null}
-                        </div>
+                <div className='w-5/6 border-t-2 mx-auto'></div>
+
+                <div className='h-[60px] py-2 px-4 lg:px-5 flex items-end justify-between'>
+                    <div className='flex items-center text-slate-500'>
+                        <LuClock4 />
+                        <span className='ms-1 line-clamp-1'>{props.time}ساعت</span>
+                    </div>
+                    <div className='flex flex-col-reverse items-center'>
+                        <span className='text-primary font-bold'>{(priceAfterOff !== 0) ? <span className='flex'><Separate price={priceAfterOff} /> <img src='https://mohammadhoseinhassaninassab.github.io/lebaseton/images/toman.svg' alt='.' /> </span> : "رایگان!"}</span>
+                        {props.offer ? <span className='text-slate-500 text-xs'><del><Separate price={props.price} /></del></span> : null}
                     </div>
                 </div>
             </div>
