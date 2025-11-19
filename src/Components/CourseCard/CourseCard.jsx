@@ -5,6 +5,10 @@ import Separate from '../Separate/Separate';
 import { Link } from 'react-router-dom';
 import placeholderCourseThumbnaul from '../../assets/images/ims.svg'
 import tomanSvg from '../../../public/images/toman.svg';
+import.meta.glob('../assets/images/*.{jpg,png,svg,jpeg}', { 
+  eager: true 
+});
+
 
 const CourseCard = (props) => {
     const [courseThumbnaul, setCourseThumbnaul] = useState(null);
