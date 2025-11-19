@@ -6,6 +6,7 @@ import { BsFillPlayBtnFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import Modal from '../Modal/Modal';
 import MobileNav from '../MobileNav/MobileNav';
+import logo from '../../../public/images/newest_logo_new-indigo.png';
 
 export default function NavBar() {
 
@@ -20,7 +21,7 @@ export default function NavBar() {
         <div className="w-full rounded-2xl bg-primary px-8 py-2 flex items-center gap-5 justify-between shadow-xl">
           <div className="flex items-center justify-center">
             <Link to='/' className="pe-6 lg:border-l-2 py-1 lg:border-white">
-              <img src="https://mohammadhoseinhassaninassab.github.io/lebaseton/images/newest_logo_new-indigo.png" className="h-12" alt="" />
+              <img src={logo} className="h-12" />
             </Link>
             <div className="hidden lg:flex ps-6">
               <nav className="flex items-center justify-center gap-x-10 text-white font-[600]">

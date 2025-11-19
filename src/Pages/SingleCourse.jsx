@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { useParams, Link } from 'react-router-dom'
 import NavBar from '../Components/NavBar/NavBar';
 import Footer from '../Components/Footer/Footer';
@@ -9,6 +9,8 @@ import CourseHeading from '../Components/CourseHeading/CourseHeading';
 import CommentCard from '../Components/CommerntCard/CommentCard';
 import { HiPlus } from "react-icons/hi";
 import { HiChatBubbleBottomCenterText } from "react-icons/hi2";
+import placeholderCourseThumbnaul from '../assets/images/ims.svg'
+import tomanSvg from '../../public/images/toman.svg';
 
 export default function SingleCourse() {
   let params = useParams();
@@ -16,7 +18,21 @@ export default function SingleCourse() {
   let currentCourse = courses.find(course => course.id === params.courseID);
   let priceAfterOff = currentCourse.price / 100 * (100 - currentCourse.offer);
   let isLogin = true;
-  window.scroll(0,0)
+
+  const [courseThumbnaul, setCourseThumbnaul] = useState(null);
+
+  const imageLoader = async (imageName) => {
+    try {
+      const module = await import(/* @vite-ignore */ `../assets/images/${imageName}`);
+      setCourseThumbnaul(module.default);
+    } catch (error) {
+      console.error('Import failed:', error);
+      setCourseThumbnaul(placeholderCourseThumbnaul);
+    }
+  }
+  imageLoader(currentCourse.topic_image_location);
+
+  window.scroll(0, 0)
 
   return (
     <>
@@ -31,7 +47,7 @@ export default function SingleCourse() {
 
         <div className='flex flex-col lg:flex-row-reverse gap-x-10 p-5'>
           <div className='basis-1/2 p-5 pb-0 flex items-center'>
-            <img className='rounded-2xl' src={currentCourse.topic_image_location} alt="" />
+            <img className='rounded-2xl' src={courseThumbnaul} alt="" />
           </div>
 
           <div className='basis-1/2 flex flex-col p-5 justify-center'>
@@ -41,7 +57,7 @@ export default function SingleCourse() {
               {isLogin ? (<Link className='btn-primary px-5 text-xl font-[500]' to={'/Buy/' + params.courseID}>شرکت در دوره</Link>) : (<Link className='btn-primary px-5 text-xl font-[500]'>ورود</Link>)}
 
               <div className='flex flex-col-reverse items-center'>
-                <span className='text-primary font-bold'>{(priceAfterOff !== 0) ? <span className='flex'><Separate price={priceAfterOff} /> <img src='../images/toman.svg' alt='تومن'/> </span> : "رایگان!"}</span>
+                <span className='text-primary font-bold'>{(priceAfterOff !== 0) ? <span className='flex'><Separate price={priceAfterOff} /> <img src='../images/toman.svg' alt='تومن' /> </span> : "رایگان!"}</span>
                 {currentCourse.offer ? <span className='text-slate-500 text-xs'><del><Separate price={currentCourse.price} /></del></span> : null}
               </div>
             </div>

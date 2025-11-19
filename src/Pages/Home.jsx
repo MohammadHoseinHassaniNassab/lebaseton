@@ -9,7 +9,7 @@ import mainImage from "/images/main-img.png"
 
 export default function Home() {
     let courses = CoursesDatas;
-    
+
     return (
         <>
             <NavBar />
@@ -35,7 +35,7 @@ export default function Home() {
             </div>
 
             {/* start blogs section */}
-            
+
             {/* end blogs section */}
 
             {/* start courses section */}
@@ -48,9 +48,9 @@ export default function Home() {
 
                     {courses.map(course => <CourseCard key={course.id} {...course} />)}
 
-                    {(courses.reverse()).map((course) => (
-                        <CourseCard key={course.id} {...course} />  
-                    ))}
+                    {(courses.reverse()).map((course) => {
+                        return <CourseCard key={course.id} {...course} />
+                    })}
                 </div>
             </div>
             {/* end courses section */}
