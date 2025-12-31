@@ -4,6 +4,7 @@
     --color-primary: #364945;
     --color-primary_dark: #233431;
     --color-secondary: rgb(49 46 129);
+    --radius-primary: 4rem;
 }
 
 @layer components {

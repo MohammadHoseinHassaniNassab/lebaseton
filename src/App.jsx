@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
 import SingleCourse from "./Pages/SingleCourse";
 import SingleTeacher from "./Pages/SingleTeacher";
@@ -11,7 +11,7 @@ import Login from "./Pages/Login";
 function App() {
   return (
     <div className="bg-gray-100 max-w-[2000px] mx-auto">
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses/:courseID" element={<SingleCourse />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="/courses" element={<Courses />} />
           <Route path="/login" element={<Login />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
