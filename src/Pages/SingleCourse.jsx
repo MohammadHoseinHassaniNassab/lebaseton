@@ -19,19 +19,6 @@ export default function SingleCourse() {
   let priceAfterOff = currentCourse.price / 100 * (100 - currentCourse.offer);
   let isLogin = true;
 
-  const [courseThumbnaul, setCourseThumbnaul] = useState(null);
-
-  const imageLoader = async (imageName) => {
-    try {
-      const module = await import(/* @vite-ignore */ `../assets/images/${imageName}`);
-      setCourseThumbnaul(module.default);
-    } catch (error) {
-      console.error('Import failed:', error);
-      setCourseThumbnaul(placeholderCourseThumbnaul);
-    }
-  }
-  imageLoader(currentCourse.topic_image_location);
-
   window.scroll(0, 0)
 
   return (
@@ -47,7 +34,7 @@ export default function SingleCourse() {
 
         <div className='flex flex-col lg:flex-row-reverse gap-x-10 p-5'>
           <div className='basis-1/2 p-5 pb-0 flex items-center'>
-            <img className='rounded-2xl' src={courseThumbnaul} alt="" />
+            <img className='rounded-2xl' src={"../"+currentCourse.topic_image_location} alt="" />
           </div>
 
           <div className='basis-1/2 flex flex-col p-5 justify-center'>
