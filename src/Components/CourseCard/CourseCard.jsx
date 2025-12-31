@@ -32,7 +32,7 @@ const CourseCard = (props) => {
                 <div className='text-sm font-normal flex items-center justify-between p-4 pt-0 text-slate-500 hover:text-primary transition-colors duration-300 '>
                     <Link to={'/teachers/' + props.teacher_id} className='flex items-center'>
                         <IoPersonCircleOutline className='text-lg' />
-                        کبری صبوری مقدم
+                        محمد اکبری
                     </Link>
                 </div>
                 <div className='w-5/6 border-t-2 mx-auto'></div>
