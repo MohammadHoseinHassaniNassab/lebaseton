@@ -4,6 +4,7 @@ import CoursesDatas from '../Components/Datas/CoursesDatas';
 import { FaMoneyBillWave } from "react-icons/fa6";
 import Separate from '../Components/Separate/Separate';
 import { HiMiniReceiptPercent } from "react-icons/hi2";
+import logo from '../../public/images/final_logo_green.png';
 
 export default function Buy() {
     let params = useParams();
@@ -14,12 +15,12 @@ export default function Buy() {
     return (
         <div className='h-screen w-screen flex items-center justify-center flex-col'>
             <div className='mb-28 flex items-center justify-between gap-x-5'>
-                <img src="../images/final_logo_green.png" className='size-14 rounded-2xl' alt="" />
+                <img src={logo} className='size-14 rounded-2xl' alt="" />
                 <h2 className='font-bold text-4xl'>صبوی مقدم</h2>
             </div>
             <div className='max-w-[400px] w-full relative'>
                 <div className='px-12 absolute -bottom-20 z-10'>
-                    <img src={'../' + selectedCourse.topic_image_location} alt="" className='rounded-3xl shadow-2xl' />
+                    <img src={selectedCourse.topic_image_location} alt="" className='rounded-3xl shadow-2xl' />
                 </div>
             </div>
             <div className='max-w-[400px] w-full relative p-5 pt-0'>

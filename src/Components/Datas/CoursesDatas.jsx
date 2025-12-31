@@ -9,7 +9,7 @@ let CoursesDatas = [
         "offer": 0,
         "information": "این دوره مخصوص افرادی هست که هیچ پیش‌زمینه‌ای در خیاطی ندارن. هنرجو ابتدا با ابزارها، اصطلاحات و انواع پارچه‌ها آشنا می‌شه. سپس دوخت‌های پایه مثل دوخت ساده، زیپ مخفی و سجاف رو یاد می‌گیره. در ادامه با روش‌های برش بدون الگو، لباس‌های ساده مثل دامن، بلوز و تونیک رو می‌دوزه. این دوره مقدمه‌ای عالی برای ورود به دنیای حرفه‌ای خیاطی هست.",
         "label": "اموزش خیاطی",
-        "topic_image_location": "./src/assets/images/ChatGPT1.png",
+        "topic_image_location": "https://github.com/MohammadHoseinHassaniNassab/lebaseton/blob/main/src/assets/images/ChatGPT1.png?raw=true",
         "teacher_id": "1",
         "students_count": "0"
     },
@@ -23,8 +23,8 @@ let CoursesDatas = [
         "offer": 90,
         "information": "در این دوره هنرجو با اصول رسم الگوهای پایه بر اساس اندازه‌های شخصی آشنا می‌شه. متد متریک یکی از دقیق‌ترین و محبوب‌ترین روش‌های طراحی الگو در ایرانه. هنرجو یاد می‌گیره چطور الگو رو روی پارچه منتقل کنه، لباس رو طبق الگو بدوزه و ایرادات احتمالی اندامی رو اصلاح کنه. آموزش شامل دوخت مانتو، پیراهن، شلوار و دامن هست.",
         "label": "آموزشی ، دوره",
-        // "topic_image_location": "../images/ezgif.com-jpg-to-webp-converted-16-1-768x432.webp",
-        "topic_image_location": "./src/assets/images/ChatGPT1.png",
+        "topic_image_location": "https://github.com/MohammadHoseinHassaniNassab/lebaseton/blob/main/src/assets/images/ChatGPT1.png?raw=true",
+    
         "teacher_id": "1",
         "students_count": "0"
     },
@@ -38,8 +38,7 @@ let CoursesDatas = [
         "offer": 16,
         "information": "این دوره برای کسانیه که قصد دارن لباس‌های ظریف، رسمی و ژورنالی بدوزن. تمرکز این دوره روی جزئیاتیه که لباس رو خاص و حرفه‌ای می‌کنه؛ از طراحی یقه‌های خاص گرفته تا آستین‌های مدل‌دار، دامن‌های چین‌دار و حتی دوخت پایه لباس عروس. هنرجو با تکنیک‌هایی مثل دوخت مخفی، لایه‌کشی حرفه‌ای و انواع خرجکار هم آشنا می‌شه.",
         "label": "test",
-        // "topic_image_location": "../images/badusb-1-768x432.webp",
-        "topic_image_location": "./src/assets/images/ChatGPT1.png",
+        "topic_image_location": "https://github.com/MohammadHoseinHassaniNassab/lebaseton/blob/main/src/assets/images/ChatGPT1.png?raw=true",
         "teacher_id": "1",
         "students_count": "0"
     },
@@ -53,8 +52,7 @@ let CoursesDatas = [
         "offer": 100,
         "information": "مانتو یکی از پرطرفدارترین لباس‌ها در ایران هست و این دوره به طور اختصاصی به طراحی و دوخت مانتوهای مد روز و خاص اختصاص داره. هنرجو یاد می‌گیره چطور الگوهای مانتو رو طراحی کنه و مدل‌های کتی، عبایی، دکمه‌دار و مانتوهای فانتزی رو بدوزه. همچنین تکنیک‌هایی برای افزایش کیفیت دوخت و اضافه کردن تزئینات حرفه‌ای آموزش داده می‌شه.",
         "label": "test",
-        // "topic_image_location": "../images/1402-10-20-17.40.16_11zon-768x432.webp",
-        "topic_image_location": "./src/assets/images/ChatGPT1.png",
+        "topic_image_location": "https://github.com/MohammadHoseinHassaniNassab/lebaseton/blob/main/src/assets/images/ChatGPT1.png?raw=true",
         "teacher_id": "1",
         "students_count": "0"
     }

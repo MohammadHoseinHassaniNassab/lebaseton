@@ -6,8 +6,8 @@ export default function CommentCard() {
   return (
     <div className='mt-2 bg-gray-100 rounded-2xl p-5'>
       <div className='flex items-center gap-x-2'>
-        <img src="../images/teacher_sabori.jpg" alt="" className='rounded-full w-12' />
-        <h3 className='text-lg font-[500]'>کبری صبوری مقدم</h3>
+        <img src="https://github.com/MohammadHoseinHassaniNassab/lebaseton/blob/main/src/assets/images/user-3296.png?raw=true" alt="" className='rounded-full w-12' />
+        <h3 className='text-lg font-[500]'>رضا دولتی</h3>
         <span className='rounded-full hover:bg-slate-300 p-2 text-2xl ms-auto cursor-pointer transition-colors duration-300'>
         <BsFillReplyFill />
         </span>
